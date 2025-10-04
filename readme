@@ -1,0 +1,5 @@
+for fronted 
+npm run dev
+
+for backed 
+npm run dev 
