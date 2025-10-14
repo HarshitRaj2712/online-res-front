@@ -5,8 +5,15 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   plugins: [react()],
    server: {
-    host: 'localhost',  // You can also use '0.0.0.0' to make it accessible on your network
-    port: 5173,         // Change to any port you want
-    open: true,         // Automatically opens the browser
-  },
+    host: '0.0.0.0', // allows access from network and Vercel preview
+    port: 5173,
+    open: true,
+    cors: {
+      origin: [
+        'http://localhost:5173',
+        'https://online-res-front.vercel.app'
+      ],
+      credentials: true,
+    },
+   }
 })
