@@ -37,7 +37,7 @@ const Reservation = () => {
       navigate("/success");
     } catch (error) {
       // toast.error(error.response.data.message);
-      toast.error(error?.response?.data?.message || "Reservation failed");
+      toast.error(error?.response?.data?.message || "Reservation failed htt bkl");
 
     }
   };
