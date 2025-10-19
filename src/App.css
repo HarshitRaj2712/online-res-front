@@ -710,6 +710,8 @@ nav svg {
 }
 .team .container .team_container .card img {
   width: 175px;
+  height: 175px;
+  border-radius: 50%;
   margin-bottom: 1rem;
 }
 .team .container .team_container .card h3 {
